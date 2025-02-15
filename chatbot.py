@@ -22,7 +22,7 @@ conv_model = HuggingFaceHub(
 memory = ConversationBufferMemory()
 
 # Create the prompt template
-template = "You are a helpful AI assistant that makes stories by completing the query provided by the user: {query}"
+template = "You are a helpful AI assistant that help users to complete thier task in given query provided by the user: {query}"
 
 @cl.on_chat_start
 async def main():
